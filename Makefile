@@ -1,8 +1,8 @@
 NAME=libasm.a
 ASM=nasm
-ASM_FLAG= -felf64 
+ASM_FLAG= -felf64 -g
 CC=clang
-CC_FLAGS= -Wall -Werror -Wextra
+CC_FLAGS= -g3
 
 #test file
 MAIN=main.c

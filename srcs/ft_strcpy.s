@@ -1,6 +1,7 @@
 global ft_strcpy
 
 section .text
+
 ft_strcpy:
 	push	rbp
 	mov		rbp, rsp
@@ -11,6 +12,7 @@ cpy_str:
 	mov		BYTE [rdi + rax], dl
 	cmp		BYTE [rdi + rax], 0
 	jnz		str_crawling
+	mov		rax, rdi
 	pop		rbp
 	ret
 
